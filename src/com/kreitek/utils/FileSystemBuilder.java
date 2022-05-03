@@ -20,9 +20,10 @@ public class FileSystemBuilder {
 
     public FileSystemBuilder addFile(String name, int size) {
         FileSystemItem file = new File(currentDirectory, name);
-        file.open();
-        file.write(new byte[size]);
-        file.close();
+        File f = (File) file;
+        f.open();
+        f.write(new byte[size]);
+        f.close();
         currentDirectory.addFile(file);
         return this;
     }
