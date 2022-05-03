@@ -1,0 +1,7 @@
+El principio que he visto que se incumple, es el Principio de Segregación de Interfaces, por lo que
+la solución que he intentado proporcionarle ha sido "intentar liberar un poco" la interfaz creando
+otra interfaz llamada IFile, para separar los metodos, así evitamos tener tan sobrefcargado el FileSystemItem.
+
+Se que probablemente no haya proporcionado la solución del la mejor manera y es probable que se me esté
+escapando algún principio más que se incumple, pero no he podido dedicarle el tiempo que me gustaría a esta
+practica.
